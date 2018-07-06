@@ -5,6 +5,7 @@
   <p>제목 : <%= post.title %></p>
   <p>내용 : <%= post.content %></p>
   <%= link_to '글보기', post, class: "btn btn-primary" %>
+  <%= link_to '좋아요', "posts/#{post.id}/like"%>
   <hr />
 <% end %>
 <div class="d-flex justify-content-center">
