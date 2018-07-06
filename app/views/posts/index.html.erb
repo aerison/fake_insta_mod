@@ -5,7 +5,16 @@
   <p>제목 : <%= post.title %></p>
   <p>내용 : <%= post.content %></p>
   <%= link_to '글보기', post, class: "btn btn-primary" %>
-  <%= link_to '좋아요', "posts/#{post.id}/like"%>
+    <% if current_user and current_user.liked_posts.include? post %>
+        <%= link_to "posts/#{post.id}/like", data: {id: post.id}, remote: true, method: :delete do %>
+          <i class="fas fa-heart"></i>
+        <% end %>
+    <% else %>
+        <%= link_to "posts/#{post.id}/like", data: {id: post.id}, remote: true, method: :put do %>
+          <i class="far fa-heart"></i>
+        <% end %>
+    <% end %>
+    <span><%= post.liked_users.count %></span>
   <hr />
 <% end %>
 <div class="d-flex justify-content-center">
