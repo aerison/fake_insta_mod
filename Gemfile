@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
-#이미지 조작
-gem "mini_magick"
+
 #파일업로드
 gem 'carrierwave', '~> 1.0'
+#이미지 조작
+gem "mini_magick"
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
+
 #환경변수설정
 gem 'figaro'
 #cloud service
@@ -13,10 +16,14 @@ gem 'fog'
 gem 'devise'
 gem 'cancancan', '~> 2.0'
 
+gem 'tinymce-rails'
 gem 'kaminari'
 gem 'simple_form'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'pry-rails'
+#language
+gem 'tinymce-rails'
+gem 'tinymce-rails-langs'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
