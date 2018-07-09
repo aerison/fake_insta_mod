@@ -6,7 +6,7 @@ class LikesController < ApplicationController
                 post_id: @post_id)
     respond_to do |format|
       format.html {redirect_to :back}
-      format.js {}
+      format.js {} #create.js.erb출력하겠다는 약속
     end
   end
 
