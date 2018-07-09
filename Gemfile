@@ -7,6 +7,8 @@ gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 
+gem 'aws-sdk'
+
 #환경변수설정
 gem 'figaro'
 #cloud service
