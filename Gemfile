@@ -19,6 +19,8 @@ gem 'devise'
 gem 'cancancan', '~> 2.0'
 gem 'omniauth-facebook'
 
+gem 'omniauth-kakao', :git => 'https://github.com/hcn1519/omniauth-kakao'
+
 gem 'tinymce-rails'
 gem 'kaminari'
 gem 'simple_form'

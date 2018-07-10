@@ -5,7 +5,12 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     omniauth_callbacks: 'users/omniauth_callbacks' }
 
-    
+  devise_scope :user do
+    match 'users/info' => 'users/registrations#info', via: [:get, :patch]
+    #get 'users/info' => 'users/registrations#info'
+  end
+
+
   root 'posts#index'
 
   resources :posts
