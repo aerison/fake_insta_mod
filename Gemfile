@@ -17,6 +17,7 @@ gem 'fog'
 #회원관리
 gem 'devise'
 gem 'cancancan', '~> 2.0'
+gem 'omniauth-facebook'
 
 gem 'tinymce-rails'
 gem 'kaminari'
