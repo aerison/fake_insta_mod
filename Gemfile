@@ -21,6 +21,11 @@ gem 'omniauth-facebook'
 
 gem 'omniauth-kakao', :git => 'https://github.com/hcn1519/omniauth-kakao'
 
+#times
+gem 'rails-i18n', '~> 4.0' # For 4.0.x
+gem 'devise-i18n'
+
+
 gem 'tinymce-rails'
 gem 'kaminari'
 gem 'simple_form'
