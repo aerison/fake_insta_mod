@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  has_many :comments
+  has_many :comments ,dependent: :destroy  #post삭제되면 comment 까지 삭제되는 코드
   belongs_to :user
   has_many :likes
   has_many :liked_users, through: :likes, source: :user
