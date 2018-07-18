@@ -18,7 +18,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'sonsoo1224@gmail.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -259,7 +259,7 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
   config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_APP_SECRET']
-  config.omniauth :kakao, ENV['KAKAO_APP_KEY'], ENV['KAKAO_APP_SECRET'],redirect_path: '/users/auth/kakao/callback' 
+  config.omniauth :kakao, ENV['KAKAO_APP_KEY'], ENV['KAKAO_APP_SECRET'],redirect_path: '/users/auth/kakao/callback'
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
